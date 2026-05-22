@@ -17,7 +17,7 @@ jobs:
           fetch-depth: 0 # Permet à TruffleHog de scanner TOUT l'historique de tes commits
 
       - name: TruffleHog OSS Scan
-        uses: trufflesecurity/trufflehog-main-action@v3.82.0
+        uses: trufflesecurity/trufflehog-actions@main
         with:
           path: ./
           base: ""
