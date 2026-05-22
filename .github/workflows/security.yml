@@ -14,10 +14,10 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # Permet à TruffleHog de scanner TOUT l'historique de tes commits
+          fetch-depth: 0
 
       - name: TruffleHog OSS Scan
-        uses: trufflesecurity/trufflehog-actions@main
+        uses: trufflesecurity/trufflehog@main
         with:
           path: ./
           base: ""
